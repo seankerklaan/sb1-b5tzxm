@@ -1,0 +1,156 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+
+const title = "Sean Kerklaan Medical Consulting | Healthcare Practice Management Expert";
+const description = "Transform your medical practice with Sean Kerklaan's expert consulting services. Optimize operations, improve patient care, and increase profitability with 30 years of healthcare management experience.";
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <Hero />
+  
+  <main>
+    <section id="services" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Comprehensive Practice Solutions</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">Expert consulting services designed to optimize your medical practice's performance and patient care.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <ServiceCard
+            title="Practice Setup & Optimization"
+            description="Complete guidance for new clinic setup or existing practice optimization, ensuring efficient workflows from day one."
+            icon="🏥"
+          />
+          <ServiceCard
+            title="Financial Management"
+            description="Maximize profitability through strategic financial planning, billing optimization, and revenue cycle management."
+            icon="💰"
+          />
+          <ServiceCard
+            title="Technology Integration"
+            description="Implement and optimize EMR systems, patient portals, and digital tools to streamline your practice."
+            icon="💻"
+          />
+          <ServiceCard
+            title="Staff Development"
+            description="Build and train high-performing medical teams with proven management systems and protocols."
+            icon="👥"
+          />
+          <ServiceCard
+            title="Patient Experience"
+            description="Create exceptional patient experiences through improved communication and service delivery systems."
+            icon="❤️"
+          />
+          <ServiceCard
+            title="Compliance & Quality"
+            description="Ensure your practice meets all regulatory requirements while maintaining highest quality standards."
+            icon="✓"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="py-20 bg-blue-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose SK Medical Consulting?</h2>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center mt-1">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                  </svg>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold text-gray-900">30 Years of Experience</h3>
+                  <p class="mt-2 text-gray-600">Deep expertise in healthcare management and practice optimization.</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center mt-1">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                  </svg>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold text-gray-900">Proven Results</h3>
+                  <p class="mt-2 text-gray-600">Track record of improving practice efficiency and profitability.</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center mt-1">
+                  <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                  </svg>
+                </div>
+                <div class="ml-4">
+                  <h3 class="text-lg font-semibold text-gray-900">Tailored Solutions</h3>
+                  <p class="mt-2 text-gray-600">Customized strategies that fit your unique practice needs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative">
+            <img 
+              src="/consulting.jpg" 
+              alt="Medical consulting session" 
+              class="rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">Ready to Transform Your Practice?</h2>
+          <p class="text-xl text-gray-600 mb-8">
+            Book a free consultation to discuss how we can help optimize your medical practice.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:+14164790077" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700">
+              Call 416-479-0077
+            </a>
+            <a href="mailto:contact@seankerklaan.com" class="inline-flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-medium rounded-lg text-blue-600 bg-white hover:bg-blue-50">
+              Email Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-lg font-semibold mb-4">SK Medical Consulting</h3>
+          <p class="text-gray-400">Transforming healthcare practices through expert consulting and management solutions.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Contact</h3>
+          <p class="text-gray-400">Phone: 416-479-0077</p>
+          <p class="text-gray-400">Email: contact@seankerklaan.com</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+            <li><a href="#expertise" class="text-gray-400 hover:text-white">Expertise</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">© {new Date().getFullYear()} SK Medical Consulting. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
